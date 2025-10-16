@@ -1,5 +1,3 @@
-package Baekjoon.Gold.2668.숫자고르기;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
