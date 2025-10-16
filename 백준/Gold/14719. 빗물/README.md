@@ -1,6 +1,11 @@
 # [Gold V] 빗물 - 14719 
 
-[문제 링크](https://www.acmicpc.net/problem/14719) 
+![Solved.ac Tier](https://img.shields.io/badge/solved.ac-Gold%20V-F29D16?style=for-the-badge&logo=solved.ac)
+
+[문제 링크](https://www.acmicpc.net/problem/14719)
+
+
+`#다이나믹 프로그래밍` `#O(N)` `정답 코드 참고`
 
 ### 성능 요약
 
@@ -36,3 +41,36 @@
 
 <p>빗물이 전혀 고이지 않을 경우 0을 출력하여라.</p>
 
+<hr>
+
+### 핵심 풀이 전략
+
+`메모리: 16028 KB`
+`시간: 132 ms`
+
+빈 공간을 0,
+블록을 1,
+빗물을 2라고 하였을 때,
+
+블록(1)을 만났을 때, 가로 인덱스를 +1씩 증가 -> 블록(1)을 만나면, 그 사이에 있는 공간들은 모두 2로 채움.
+만약 블록(1)을 못만났을 경우에는 넘어감
+
+블록을 하나씩 지나갈 때마다 1로 방문 표시
+
+그 후 2로 채워진 공간을 카운팅 하여 출력
+
+---
+
+### 삽질 기록 🧠
+
+- **코드 순서 오류**
+    - if(board[height][curIndex] == 0){ <br>
+      board[height][curIndex] = 1;  <br>
+      curIndex++; <br>
+      } <br>
+    에서 curIndex를 먼저 실행하고 그 뒤에 board[][] 값을 채우도록 하여서 인덱스 오류 발생.
+
+---
+
+### 배운 점 & 보완할 점
+- 코드 순서에 유의하자
