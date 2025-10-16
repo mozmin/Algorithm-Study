@@ -1,6 +1,8 @@
 # [Gold V] A와 B 2 - 12919 
-
+![Solved.ac Tier](https://img.shields.io/badge/solved.ac-Gold%20V-F29D16?style=for-the-badge&logo=solved.ac)
 [문제 링크](https://www.acmicpc.net/problem/12919) 
+
+`#다이나믹 프로그래밍` `#O(N)` `정답 코드 참고`
 
 ### 성능 요약
 
