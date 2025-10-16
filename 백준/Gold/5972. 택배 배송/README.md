@@ -1,6 +1,11 @@
 # [Gold V] 택배 배송 - 5972 
 
-[문제 링크](https://www.acmicpc.net/problem/5972) 
+![Solved.ac Tier](https://img.shields.io/badge/solved.ac-Gold%20V-F29D16?style=for-the-badge&logo=solved.ac)
+
+[문제 링크](https://www.acmicpc.net/problem/5972)
+
+
+`#그래프 이론` `#최단 경로` `#다익스트라` `#O(N)`
 
 ### 성능 요약
 
@@ -47,3 +52,24 @@
 
  <p>첫째 줄에 농부 현서가 가져가야 될 최소 여물을 출력합니다.</p>
 
+<hr>
+
+### 핵심 풀이 전략
+
+`메모리: 52884 KB`
+`시간: 476 ms`
+
+---
+
+### 삽질 기록 🧠
+
+- **잘못된 우선 순위 큐 사용**
+    - a -> a[0]으로 단순히 헛간의 번호만 비교함
+- **중복 방지 로직 누락**
+  - if (curCost > dist[curIndex]) continue; 코드 누락
+
+---
+
+### 배운 점 & 보완할 점
+- 우선 순위 큐에서 Comparator 사용법을 좀 더 공부할 필요가 있음.
+- **중복 방지**를 위한 로직이 항상 들어가야함을 잊지 말자
