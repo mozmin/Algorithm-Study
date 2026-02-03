@@ -1,4 +1,4 @@
-# Algorithm_Study (코딩 테스트 대비)
+# Algorithm (코딩 테스트 대비)
 
 [![Java](https://img.shields.io/badge/Language-Java-blue.svg?style=for-the-badge&logo=java)](&nbsp;)
 
