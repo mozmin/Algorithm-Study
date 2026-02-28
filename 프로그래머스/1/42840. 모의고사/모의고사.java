@@ -31,8 +31,6 @@ class Solution {
         int max = Math.max(f_count, s_count);
         max = Math.max(max, t_count);
         
-        System.out.println(max + "");
-        
         if(max == f_count) list.add(1);
         if(max == s_count) list.add(2);
         if(max == t_count) list.add(3);
